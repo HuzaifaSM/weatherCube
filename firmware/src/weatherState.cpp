@@ -39,6 +39,7 @@ WeatherState stateFromWmoCode(int wmoCode) {
 
         case 95:
         case 96:
+        case 97:
         case 99:
             return WeatherState::storm;
 
