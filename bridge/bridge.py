@@ -2,10 +2,10 @@ import json
 import sys
 import time
 import serial
-
+from pathlib import Path
 from weatherClient import fetchWeatherCode
 
-configPath = "bridge/config.json"
+configPath = Path(__file__).resolve().parent / "config.json"
 baudRate = 9600
 loopSleepSeconds = 0.2
 

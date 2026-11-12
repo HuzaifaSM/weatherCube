@@ -7,7 +7,7 @@
 // starts offline
 static WeatherState currentState = WeatherState::offline;
 static unsigned long lastMessageMs = 0;
-static bool hasRecievedMessage = false;
+static bool hasReceivedMessage = false;
 
 static const __FlashStringHelper *stateName(WeatherState state) {
     switch (state) {
